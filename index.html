@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Salma Maher — Frontend Developer & Data Science Student. Building elegant digital interfaces for startups and e-commerce."/>
+  <title>Salma Maher · Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     NAV
+══════════════════════════════════════════ -->
+<nav class="nav" role="navigation">
+  <a href="#hero" class="nav-logo">SM</a>
+
+  <ul class="nav-links" role="list">
+    <li><a href="#hero"         data-t="navHome">Home</a></li>
+    <li><a href="#about"        data-t="navAbout">About</a></li>
+    <li><a href="#education"    data-t="navEdu">Education</a></li>
+    <li><a href="#experience"   data-t="navExp">Experience</a></li>
+    <li><a href="#skills"       data-t="navSkills">Skills</a></li>
+    <li><a href="#projects"     data-t="navProjects">Projects</a></li>
+    <li><a href="#contact"      data-t="navContact">Contact</a></li>
+    <li>
+      <button class="lang-btn" id="lang-btn" onclick="toggleLanguage()" aria-label="Toggle language">
+        عربي
+      </button>
+    </li>
+  </ul>
+
+  <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+
+<!-- ══════════════════════════════════════════
+     HERO  ← photo-hero.png (pink shirt)
+══════════════════════════════════════════ -->
+<section id="hero">
+  <div class="blob blob-1" aria-hidden="true"></div>
+  <div class="blob blob-2" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <div class="eyebrow">
+      <span class="dot" aria-hidden="true"></span>
+      <span data-t="eyebrow">Frontend Developer</span>
+    </div>
+
+    <h1 class="hero-name">
+      <span data-t="name1">Salma</span><br/>
+      <span class="it" data-t="name2">Maher</span>
+    </h1>
+
+    <p class="hero-sub" data-t="heroSub">Frontend Developer · Data Science · System Architecture</p>
+    <p class="hero-tag" data-t="heroTagline">Turning Complex Ideas into Elegant Digital Interfaces</p>
+
+    <div class="cta-row">
+      <a href="#projects" class="btn-p" data-t="heroCta1">View My Work</a>
+      <a href="#contact"  class="btn-s" data-t="heroCta2">Let's Talk</a>
+    </div>
+  </div>
+
+  <div class="hero-img-wrap">
+    <div class="hero-frame">
+      <img id="hero-photo" class="hero-photo"
+           src="assets/images/photo-hero.png"
+           alt="Salma Maher — Frontend Developer" loading="eager"/>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     ABOUT  ← photo-about.png (arms crossed)
+══════════════════════════════════════════ -->
+<section id="about" class="sec">
+  <div class="inner two-col">
+
+    <!-- Image -->
+    <div class="reveal" style="position:relative">
+      <div class="about-img">
+        <img id="about-photo"
+             src="assets/images/photo-about.png"
+             alt="Salma Maher — About" loading="lazy"/>
+      </div>
+      <div class="stat-badge">
+        <div class="n" data-t="hrs">330</div>
+        <div class="l" data-t="hrsL">Hours Hands-On</div>
+      </div>
+    </div>
+
+    <!-- Text -->
+    <div>
+      <span class="tag reveal" data-t="aboutTag">About Me</span>
+      <h2 class="sec-title reveal">
+        <span data-t="aboutTitle">A Developer Who Thinks in Systems,</span>
+        <!-- <br/><span class="ac" data-t="aboutTitleAc">Designs with Soul</span> -->
+      </h2>
+      <p class="about-lead reveal" data-t="aboutLead">
+        Frontend Web Developer with a background in <strong>Data Science</strong> and
+        <strong>System Architecture</strong>. I help startups and e-commerce businesses
+        turn weak, frustrating digital experiences into fast, intuitive, and conversion-ready
+        products that their users actually enjoy using.
+      </p>
+      <p class="about-body reveal" data-t="aboutPara">
+        With 330 hours of hands-on development, I focus on what matters most to your business —
+        reducing bounce rates, improving usability, and delivering interfaces that keep users
+        engaged and coming back.
+      </p>
+      <div class="nums reveal">
+        <div class="num-item">
+          <div class="n" data-t="hrs">330</div>
+          <div class="l" data-t="hrsL">Hours Hands-On</div>
+        </div>
+        <div class="num-item">
+          <div class="n" data-t="projs">15</div>
+          <div class="l" data-t="projsL">Projects Built</div>
+        </div>
+      </div>
+      <a href="#contact" class="btn-p reveal" data-t="heroCta2">Let's Talk</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     EDUCATION
+══════════════════════════════════════════ -->
+<section id="education" class="sec">
+  <div class="inner two-col-rev">
+
+    <!-- Text cards -->
+    <div>
+      <span class="tag reveal" data-t="eduTag">Education</span>
+      <h2 class="sec-title reveal">
+        <span data-t="eduTitle">Academic</span>
+        <span class="ac" data-t="eduTitleAc"> Foundation</span>
+      </h2>
+
+      <div class="edu-card reveal">
+        <div class="edu-year" data-t="eduYear">2024 – 2028</div>
+        <div class="edu-deg"  data-t="eduDeg">Bachelor of Data Science</div>
+        <div class="edu-inst" data-t="eduInst">Faculty of Computers &amp; Data Science — Alexandria University</div>
+        <div class="edu-inst" data-t="edudis">combining modern web development with analytical thinking to build scalable, intelligent, and user-centered digital experiences. Skilled at transforming complex data-driven ideas into responsive and visually engaging web applications.</div>
+      </div>
+
+      <!-- <div class="edu-card reveal" style="background:linear-gradient(135deg,rgba(200,168,233,.06),rgba(195,199,244,.06))">
+        <div class="edu-year">Holland Code: IRC</div>
+        <div class="edu-deg">Investigative · Realistic · Conventional</div>
+        <div class="edu-inst">Natural fit for Data Science, System Architecture &amp; Frontend Engineering</div>
+      </div> -->
+    </div>
+
+    <!-- Visual -->
+    <div class="reveal">
+      <div class="edu-visual">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-uni" data-t="eduUni" style="white-space:pre-line;font-family:var(--font-d);font-size:1.35rem;font-weight:700;color:#fff;line-height:1.35;margin-bottom:.6rem;position:relative;z-index:1;text-align:center">Faculty of Computers
+&amp; Data Science</div>
+        <div class="edu-country" data-t="eduCountry" style="position:relative;z-index:1">Alexandria University · Egypt</div>
+        <div class="edu-pill" data-t="eduPill">Data Science · 2024–2028</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     WORK EXPERIENCE  
+══════════════════════════════════════════ -->
+<section id="experience" class="sec">
+  <div class="inner two-col">
+
+    <!-- Photo -->
+    <div class="reveal">
+      <img id="work-photo" class="exp-photo"
+           src="assets/images/photo-work.png"
+           alt="Salma Maher — Work Experience" loading="lazy"/>
+    </div>
+
+    <!-- Cards -->
+    <div>
+      <span class="tag reveal" data-t="expTag">Work Experience</span>
+      <h2 class="sec-title reveal">
+        <span data-t="expTitle">Building Real-World</span>
+        <span class="ac" data-t="expTitleAc"> Solutions</span>
+      </h2>
+
+      <div class="exp-card reveal">
+        <div class="exp-head">
+          <div class="exp-role" data-t="exp1Role">Freelancing as a frontend </div>
+          <span class="exp-period" data-t="exp1Period">2025 – Present</span>
+        </div>
+        <div class="exp-company" data-t="exp1Co">Independent · Remote</div>
+        <p class="exp-desc" data-t="exp1Desc">
+          on khamsat , linkedin , mostaqel 
+          Designing and developing responsive web applications for startups and e-commerce clients
+          — focused on performance, UX, and clean architecture.
+        </p>
+      </div>
+
+      <div class="exp-card reveal">
+        <div class="exp-head">
+          <div class="exp-role" data-t="exp2Role">Frontend Development Trainee</div>
+          <span class="exp-period" data-t="exp2Period">2025 – 2026</span>
+        </div>
+        <!-- <div class="exp-company" data-t="exp2Co">Self-Directed Program</div> -->
+        <p class="exp-desc" data-t="exp2Desc">
+          Completed 330+ hours of structured training in HTML, CSS, JavaScript,
+           API integration, responsive design, and UX principles.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     SKILLS
+══════════════════════════════════════════ -->
+<section id="skills" class="sec">
+  <div class="inner">
+    <div class="skills-center">
+      <span class="tag reveal" data-t="skillsTag">Skills &amp; Tools</span>
+      <h2 class="sec-title reveal">
+        <span data-t="skillsTitle">What I Bring to</span>
+        <span class="ac" data-t="skillsTitleAc"> the Table</span>
+      </h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-cat reveal">
+        <div class="sk-icon" style="background:rgba(200,168,233,.15)">🖥️</div>
+        <div class="sk-title" data-t="sk1">Frontend Dev</div>
+        <div class="sk-tags">
+          <span class="sk-tag" style="background:rgba(200,168,233,.14);color:var(--mid)">HTML5</span>
+          <span class="sk-tag" style="background:rgba(200,168,233,.14);color:var(--mid)">API integration</span>
+          <span class="sk-tag" style="background:rgba(200,168,233,.14);color:var(--mid)">CSS3</span>
+          <span class="sk-tag" style="background:rgba(200,168,233,.14);color:var(--mid)">JavaScript</span>
+          <span class="sk-tag" style="background:rgba(200,168,233,.14);color:var(--mid)">Responsive Design</span>
+          <span class="sk-tag" style="background:rgba(200,168,233,.14);color:var(--mid)">UX/UI</span>
+        </div>
+      </div>
+
+      <div class="skill-cat reveal">
+        <div class="sk-icon" style="background:rgba(246,188,186,.2)">📊</div>
+        <div class="sk-title" data-t="sk2">Data &amp; Logic</div>
+        <div class="sk-tags">
+          <span class="sk-tag" style="background:rgba(246,188,186,.2);color:var(--mid)">Python</span>
+          <span class="sk-tag" style="background:rgba(246,188,186,.2);color:var(--mid)">SQL</span>
+          <span class="sk-tag" style="background:rgba(246,188,186,.2);color:var(--mid)">Data Analysis</span>
+          <span class="sk-tag" style="background:rgba(246,188,186,.2);color:var(--mid)">Excel</span>
+        </div>
+      </div>
+
+      <div class="skill-cat reveal">
+        <div class="sk-icon" style="background:rgba(195,199,244,.2)">🏗️</div>
+        <div class="sk-title" data-t="sk3">Design &amp; Arch</div>
+        <div class="sk-tags">
+          <span class="sk-tag" style="background:rgba(195,199,244,.2);color:var(--mid)">System Architecture</span>
+          <span class="sk-tag" style="background:rgba(195,199,244,.2);color:var(--mid)">3D Visualization</span>
+          <span class="sk-tag" style="background:rgba(195,199,244,.2);color:var(--mid)">GitHub</span>
+          <span class="sk-tag" style="background:rgba(195,199,244,.2);color:var(--mid)">Spatial Thinking</span>
+        </div>
+      </div>
+
+      <div class="skill-cat reveal">
+        <div class="sk-icon" style="background:rgba(227,170,221,.15)">✨</div>
+        <div class="sk-title" data-t="sk4">Soft Skills</div>
+        <div class="sk-tags">
+          <span class="sk-tag" style="background:rgba(227,170,221,.15);color:var(--mid)">Problem Solving</span>
+          <span class="sk-tag" style="background:rgba(227,170,221,.15);color:var(--mid)">Rapid Learning</span>
+          <span class="sk-tag" style="background:rgba(227,170,221,.15);color:var(--mid)">Teamwork</span>
+          <span class="sk-tag" style="background:rgba(227,170,221,.15);color:var(--mid)">Creativity</span>
+          <span class="sk-tag" style="background:rgba(227,170,221,.15);color:var(--mid)">Curiosity</span>
+          <span class="sk-tag" style="background:rgba(227,170,221,.15);color:var(--mid)">Attention to Detail</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     PROJECTS — 3 real projects with live links
+══════════════════════════════════════════ -->
+<section id="projects" class="sec">
+  <div class="inner">
+    <div class="projects-center">
+      <span class="tag reveal" data-t="projTag">Projects</span>
+      <h2 class="sec-title reveal">
+        <span data-t="projTitle">Selected</span>
+        <span class="ac" data-t="projTitleAc"> Work</span>
+      </h2>
+    </div>
+
+    <div class="proj-grid">
+
+      <!-- ── Fokir ── -->
+      <a class="proj-card reveal" href="https://fokir-beige.vercel.app/" target="_blank" rel="noopener" aria-label="View Fokir project">
+        <div class="proj-thumb">
+          <img id="proj-fokir" src="assets/images/proj_fokir.png" alt="Fokir — Personal Portfolio" loading="lazy"/>
+          <div class="proj-overlay">
+            <span class="proj-visit" data-t="projLive">Live Preview →</span>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tag-label" data-t="p1Tag">Portfolio · HTML/CSS/JS</div>
+          <h3 class="proj-name" data-t="p1Name">Fokir</h3>
+          <div class="proj-tech">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive</span>
+          </div>
+          <p class="proj-desc" data-t="p1Desc">
+            Elegant personal portfolio website with smooth animations, responsive layout, and a clean modern design system.
+          </p>
+          <span class="proj-link" data-t="projLive">Live Preview →</span>
+        </div>
+      </a>
+
+      <!-- ── CRUD App ── -->
+      <a class="proj-card reveal" href="https://crud-flame-eight.vercel.app/" target="_blank" rel="noopener" aria-label="View CRUD project">
+        <div class="proj-thumb">
+          <img id="proj-crud" src="assets/images/proj_crud.png" alt="CRUD — Product Manager App" loading="lazy"/>
+          <div class="proj-overlay">
+            <span class="proj-visit" data-t="projLive">Live Preview →</span>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tag-label" data-t="p2Tag">JavaScript · CRUD</div>
+          <h3 class="proj-name" data-t="p2Name">Product Manager App</h3>
+          <div class="proj-tech">
+            <span>JavaScript</span><span>LocalStorage</span><span>CSS3</span><span>Validation</span>
+          </div>
+          <p class="proj-desc" data-t="p2Desc">
+            Full-featured product management app with create, read, update &amp; delete operations — clean UI and robust validation.
+          </p>
+          <span class="proj-link" data-t="projLive">Live Preview →</span>
+        </div>
+      </a>
+
+      <!-- ── AuraCast ── -->
+      <a class="proj-card reveal" href="https://aura-cast-weather.vercel.app/" target="_blank" rel="noopener" aria-label="View AuraCast project">
+        <div class="proj-thumb">
+          <img id="proj-auracast" src="assets/images/proj_auracast.png" alt="AuraCast — Weather Dashboard" loading="lazy"/>
+          <div class="proj-overlay">
+            <span class="proj-visit" data-t="projLive">Live Preview →</span>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tag-label" data-t="p3Tag">API · Weather</div>
+          <h3 class="proj-name" data-t="p3Name">AuraCast — Weather Dashboard</h3>
+          <div class="proj-tech">
+            <span>JavaScript</span><span>Weather API</span><span>Chart.js</span><span>CSS3</span>
+          </div>
+          <p class="proj-desc" data-t="p3Desc">
+            Real-time weather dashboard with city search, hourly forecasts, AQI data, and a polished glassmorphism interface.
+          </p>
+          <span class="proj-link" data-t="projLive">Live Preview →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     TESTIMONIALS
+══════════════════════════════════════════ -->
+<section id="testimonials">
+  <div class="test-center inner">
+    <span class="tag reveal" data-t="testTag">Testimonials</span>
+    <h2 class="sec-title reveal">
+      <span data-t="testTitle">What People</span>
+      <span class="ac" data-t="testTitleAc"> Say</span>
+    </h2>
+
+    <div class="test-slide active" role="group" aria-label="Testimonial 1">
+      <p class="test-quote tq">Salma's attention to detail and her ability to translate complex requirements into beautiful, functional interfaces is truly impressive.</p>
+      <div class="test-author ta">Ahmed K.</div>
+      <div class="test-role tr">Startup Founder</div>
+    </div>
+    <div class="test-slide" role="group" aria-label="Testimonial 2">
+      <p class="test-quote tq">Working with Salma was a fantastic experience. Her blend of technical skill and creative vision made our product feel premium.</p>
+      <div class="test-author ta">Layla M.</div>
+      <div class="test-role tr">E-commerce Manager</div>
+    </div>
+    <div class="test-slide" role="group" aria-label="Testimonial 3">
+      <p class="test-quote tq">Salma has a rare combination of logical thinking and aesthetic sensibility. She delivers work that actually converts.</p>
+      <div class="test-author ta">Omar T.</div>
+      <div class="test-role tr">Product Lead</div>
+    </div>
+
+    <div class="test-dots" role="tablist">
+      <button class="test-dot active" role="tab" aria-label="Slide 1"></button>
+      <button class="test-dot"        role="tab" aria-label="Slide 2"></button>
+      <button class="test-dot"        role="tab" aria-label="Slide 3"></button>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     CONTACT  — real links
+══════════════════════════════════════════ -->
+<section id="contact">
+  <span class="c-eye reveal" data-t="cEye">Work Together ? </span>
+  <h2 class="c-title reveal" data-t="cTitle">Start a Conversation ?</h2>
+  <p class="c-sub reveal" data-t="cSub">Whether you're a startup or a growing business — I'd love to help you build something great.</p>
+
+  <div class="c-links reveal">
+    <a href="mailto:salma.maher302@gmail.com" class="c-link" aria-label="Email Salma">
+      ✉️ <span data-t="cEmail">Email Me</span>
+    </a>
+    <a href="https://www.linkedin.com/in/salma-maher333/" target="_blank" rel="noopener" class="c-link" aria-label="LinkedIn profile">
+      💼 <span data-t="cLinkedIn">LinkedIn</span>
+    </a>
+    <a href="https://github.com/SalmaMaher-B" target="_blank" rel="noopener" class="c-link" aria-label="GitHub profile">
+      🐙 <span data-t="cGitHub">GitHub</span>
+    </a>
+    <a href="https://wa.me/201030869963" target="_blank" rel="noopener" class="c-link" aria-label="WhatsApp">
+      📱 <span data-t="cWhatsApp">WhatsApp</span>
+    </a>
+  </div>
+
+  <p class="c-tagline reveal" data-t="heroTagline">"Turning Complex Ideas into Elegant Digital Interfaces"</p>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer role="contentinfo">
+  <p>
+    <span data-t="footer">Designed &amp; Built by Salma Maher · 2026</span>
+    &nbsp;·&nbsp;
+    <a href="mailto:salma.maher302@gmail.com">salma.maher302@gmail.com</a>
+    &nbsp;·&nbsp;
+    <a href="https://github.com/SalmaMaher-B" target="_blank" rel="noopener">GitHub</a>
+    &nbsp;·&nbsp;
+    <a href="https://www.linkedin.com/in/salma-maher333/" target="_blank" rel="noopener">LinkedIn</a>
+  </p>
+</footer>
+
+
+<!-- Scripts -->
+<script src="js/images.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
